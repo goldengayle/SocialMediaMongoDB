@@ -1,11 +1,6 @@
 const connection = require('../config/connection');
 const { User, Thoughts} = require('../models')
-/*const {
-    getRandomName,
-    getRandomComments,
-    getRandomPost,
-    genRandomIndex,
-  } = require('./data');*/
+
   console.time('seeding');
 
 
