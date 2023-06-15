@@ -16,7 +16,7 @@ router.route('/:userId').get(getSingleUser).delete(deleteUser).put(updateUser);
 
 router.route('/:userId/friends/:friendId').put(addFriend).delete(removeFriend);
 
-//**BONUS**: Remove a user's associated thoughts when deleted.
+
 
 
 

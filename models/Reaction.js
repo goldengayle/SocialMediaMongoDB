@@ -1,8 +1,8 @@
-const { Schema, model } = require('mongoose');
+const { Schema, Types } = require('mongoose');
 
 const reactionSchema = new Schema(
     {
-        reactionID: {
+        reactionId: {
             type: Schema.Types.ObjectId,
             default:() => new Types.ObjectId(),
         
@@ -30,6 +30,7 @@ const reactionSchema = new Schema(
             getters: true,
             
         },
+        //id:false,
     }
 )
 
@@ -37,6 +38,6 @@ reactionSchema.methods.getDocumentInfo = function () {
     return this.createdAt.toDateString();}
 
 
-const Reaction = model('reaction', reactionSchema);
+//const Reaction = model('reaction', reactionSchema);
 
-module.exports = Reaction;
+module.exports = reactionSchema;
