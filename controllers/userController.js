@@ -30,8 +30,7 @@ module.exports ={
         User.findOneAndRemove({_id:req.params.userId})
         .then((user) =>{
         !user
-        ?res.status(404).json({message:'No user found with that ID'})
-        :Thought.deleteMany({ _id: { $in : user.thoughts}})
+        ?res.status(404).json({message:'No user found with that ID'}) : (user.thoughts.length ?  Thought.deleteMany({ _id : { $in : user.thoughts}}) : res.json({message:'User deleted'}))
     })
        
         .catch((err)=> err ? res.status(500).json(err):  res.json({message: 'User and thoughts deleted!'}) )
