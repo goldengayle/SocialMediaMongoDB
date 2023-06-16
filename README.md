@@ -1,4 +1,4 @@
-# SocialMediaMongoDB (Challenge 18)
+# SocialMediaMongoDB 
 
 ## Introduction
 This project demonstrates CRUD functionality using a non-relational Mongo database to store interactions between friends as commonly seen in social media sites. It was built upon functionality requirement for Challenge 18. AS A USER I want to be able to add, delete, and update user profiles associated with a social media website. I would also like to store ideas and be able for different users to react to the comments of others.
