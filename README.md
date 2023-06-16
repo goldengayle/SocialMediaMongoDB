@@ -1,19 +1,24 @@
 # SocialMediaMongoDB (Challenge 18)
 
-## Description
-This project demonstrates CRUD functionality using a non-relational Mongo database to store interactions between friends as commonly seen in social media sites 
-## Usage
-AS A USER I want to be able to add, delete, and update user profiles associated with a social media website. I would also like to store ideas and be able for different users to interact with each other.
+## Introduction
+This project demonstrates CRUD functionality using a non-relational Mongo database to store interactions between friends as commonly seen in social media sites. It was built upon functionality requirement for Challenge 18. AS A USER I want to be able to add, delete, and update user profiles associated with a social media website. I would also like to store ideas and be able for different users to react to the comments of others.
+
 <!-- <img src="examples/SVGgeneratorAPPimage.png" alt="screenshot of application">
   <a href= "https://drive.google.com/file/d/1mIhwfCKPpSGla_orYhxqc2HyiJb2Qs4o/view"> Link for video Explanation </a> -->
 
 
-## Installation
-This project requires Node v16. To use the application, type npm run start and use insomnia (or other API development platform) to render the API calls. 
+## How it was made
+This project utilizes Node v16, MongoDB and Express. Routes were tested using Insomnia to render the API Calls. 
+To make this project, an MVC organization was utilized, models were created utilizing schemas using the Mongoose Library, unique routes were chosen, and calls were managed by the controllers. 
 
+## Optimizations
+In the future, this project would benefit from a client-side platform. It would also be nice for users to interact using emojis.
+
+## Lessons Learned
+This project really stretched my understanding of interacting with a NoSQL database. I had fun debugging the controllers to get them working effectively. 
 
 ## Credits
-All code and images @goldengayle
+All code was modified from class exercises by  @goldengayle
 
 ## License
 MIT License
