@@ -1,5 +1,5 @@
 const connection = require('../config/connection');
-const { User, Thoughts, Reaction} = require('../models')
+const { User, Thought, Reaction} = require('../models')
 
   console.time('seeding');
 
@@ -8,7 +8,7 @@ connection.once('open', async () => {
     console.log('connected');
 
     await User.deleteMany({});
-    await Thoughts.deleteMany({});
+    await Thought.deleteMany({});
    
 
    

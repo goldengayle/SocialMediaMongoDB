@@ -38,6 +38,6 @@ thoughtSchema.virtual('reactionCount').get(function(){
 
 thoughtSchema.methods.getDocumentInfo = function () {
     return this.createdAt.toDateString();}
-const Thought = model('thought', thoughtSchema);
+const Thought = model('Thought', thoughtSchema);
 
 module.exports = Thought;
